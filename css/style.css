@@ -1,0 +1,13 @@
+/* Basic reset using universal selector inside it we will remove default margin and padding added by browser.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* By defining box-sizing to border-box padding and border are no longer part of height and width of an element */
+}
+body {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777777;
+}
