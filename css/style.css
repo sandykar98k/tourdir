@@ -9,14 +9,44 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7; /* line-height: 1.7 means line-height will be 1.7 times bigger than predefined line-height */
-  color: #ffffff;
 }
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, #00000020, #00000030),
+  background-image: linear-gradient(to right bottom, #00000070, #00000070),
     url(../img/hero.jpeg);
   background-size: cover;
   background-position: center;
+  position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.logo-box {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.logo {
+  height: 35px;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading-primary {
+  color: #ffffff;
+}
+.heading-primary-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 4px;
 }
