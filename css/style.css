@@ -37,24 +37,28 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .heading-primary {
   color: #ffffff;
   backface-visibility: hidden; /* To remove shakyness of an animation */
+  margin-bottom: 30px;
 }
 .heading-primary-main {
   display: block;
   font-size: 50px;
   font-weight: 800;
-  letter-spacing: 30px;
+  letter-spacing: 28px;
+  padding-left: 28px; /* Because of letter spacing it will not exact center padding left fix it */
   text-transform: uppercase;
   animation: moveInLeft 2s ease-in;
 }
 .heading-primary-sub {
   display: block;
   font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 4px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-left: 2px;
   animation: simpleOne 2s ease-in;
 }
 @keyframes moveInLeft {
@@ -74,4 +78,26 @@ body {
   100% {
     opacity: 1;
   }
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Button active state is when it get clicked */
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  background-color: #ffffff;
+  color: #777777;
 }
